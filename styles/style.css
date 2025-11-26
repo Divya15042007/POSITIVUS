@@ -504,4 +504,241 @@ header {
 
 
 
+/* PROCESS SECTION */
+.process-section {
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.process-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.process-title {
+    background: #caff6a;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 42px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.process-desc {
+    font-size: 18px;
+    max-width: 520px;
+    color: #444;
+}
+
+/* PROCESS BOX LAYOUT */
+.process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.process-box {
+    background: #f4f4f4;
+    border-radius: 40px;
+    border: 2px solid #191a23;
+    box-shadow: 0px 6px 0px #191a23;
+    padding: 35px 45px;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* When Open */
+.process-box.active {
+    background: #caff6a;
+}
+
+/* PROCESS TOP ROW */
+.process-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-number {
+    font-size: 42px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.step-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+/* PLUS BUTTON */
+.toggle-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #191a23;
+    background: white;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.process-box.active .toggle-btn {
+    background: #fff;
+}
+
+.plus {
+    transition: transform 0.25s ease;
+}
+
+/* Rotate + → - */
+.process-box.active .plus {
+    transform: rotate(180deg);
+}
+
+/* CONTENT AREA */
+.process-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding-top 0.4s ease;
+    padding-top: 0;
+}
+
+.process-box.active .process-content {
+    max-height: 220px;
+    padding-top: 25px;
+}
+
+
+
+
+/* TEAM SECTION */
+.team-section {
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.team-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.team-title {
+    background: #caff6a;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.team-desc {
+    font-size: 18px;
+    color: #444;
+    max-width: 550px;
+}
+
+/* GRID */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* TEAM CARD */
+.team-card {
+    background: white;
+    border-radius: 40px;
+    padding: 40px;
+    border: 2px solid #191a23;
+    box-shadow: 0px 6px 0px #191a23;
+    text-align: center;
+}
+
+/* PFP + LinkedIn */
+.team-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.team-pfp {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.linkedin-icon {
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* TEXT */
+.team-name {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.team-role {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.team-card hr {
+    border: none;
+    height: 1px;
+    background: #191a23;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.team-bio {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/* Wrapper for center alignment */
+.team-button-wrapper {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 900px;
+}
+
+/* Button styling */
+.see-team-btn {
+    background: #191a23;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 14px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    /* box-shadow: 0px 4px 0px #191a23; */
+}
+
+/* Hover color: neon green */
+.see-team-btn:hover {
+    background: #caff6a;
+    color: black;
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
 
