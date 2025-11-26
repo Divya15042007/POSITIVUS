@@ -5,9 +5,12 @@
     font-family: "Space Grotesk", sans-serif;
 }
 
-html  {
+html, body {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100%;
 }
+
 
 /* Custom Thin Black Scrollbar */
 ::-webkit-scrollbar {
@@ -229,14 +232,16 @@ header {
 
 /* SERVICES SECTION — EXACT HIGHLIGHT CLONE */
 .services-section {
-    padding: 60px 70px;
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .services-header {
     display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    padding: 10px 220px;
+    align-items: center;
+    gap: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .services-title {
@@ -255,3 +260,248 @@ header {
     color: #444;
     line-height: 1.5;
 }
+
+
+/* GRID SETUP */
+.services-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 70px;
+    display: grid;
+    gap: 40px;
+}
+
+@media (min-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* SERVICE CARD */
+.service-card {
+    border-radius: 45px;
+    border: 1px solid #191a23;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    box-shadow: 0px 5px 0px #191a23;
+}
+
+.light-card {
+    background: #f5f5f5;
+}
+
+.green-card {
+    background: #b9ff66;
+}
+
+.dark-card {
+    background: #191a23;
+}
+
+/* LEFT SIDE TEXT */
+.card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* TAGS */
+.tag {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.green-tag {
+    background: #caff6a;
+    color: #000;
+}
+
+.white-tag {
+    background: #fff;
+    color: #000;
+}
+
+/* RIGHT IMAGE */
+.card-right img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+
+/* ARROW LINK */
+.service-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.service-link.dark {
+    color: #fff;
+}
+
+.arrow-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.service-link:hover .arrow-icon {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+
+/* CTA SECTION */
+.cta-section {
+    padding: 80px 70px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Allow children to break out */
+.cta-box {
+    background: #f2f2f2;
+    width: 100%;
+    max-width: 1280px;
+    padding: 70px;
+    border-radius: 40px;
+    position: relative;
+    overflow: visible; /* key fix */
+    
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.cta-left h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-left p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    padding: 16px 40px;
+    background: #191a23;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.cta-button:hover {
+    background: #b9ff66;
+    color: black;
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+}
+
+/* RIGHT IMAGE — makes it overflow like original */
+.cta-right {
+    position: relative;
+}
+
+.cta-right img {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    right: -100px;     /* pushes outside the container */
+    bottom: -250px;    /* lowers image outside the box */
+    pointer-events: none;
+}
+
+
+
+/* CASE STUDIES SECTION */
+.case-section {
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.case-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.case-title {
+    background: #caff6a;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 42px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.case-desc {
+    font-size: 18px;
+    color: #444;
+    max-width: 520px;
+    line-height: 1.5;
+}
+
+/* Cards Wrapper */
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Single Card */
+.case-card {
+    background: #191a23;
+    color: white;
+    padding: 45px;
+    border-radius: 40px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Case Info Link */
+.case-link {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #caff6a;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.case-link img {
+    width: 26px;
+    height: 26px;
+}
+
+.case-link:hover img {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+
+
+
