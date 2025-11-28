@@ -742,3 +742,383 @@ header {
     transform: scale(1.05);
 }
 
+
+
+
+/* TESTIMONIAL SECTION */
+.testimonials-section {
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.testimonials-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.testimonials-title {
+    background: #caff6a;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.testimonials-desc {
+    max-width: 550px;
+    font-size: 17px;
+    color: #444;
+}
+
+/* SLIDER */
+.testimonial-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.testimonial-card {
+    min-width: 380px;
+    background: #191a23;
+    color: white;
+    padding: 35px;
+    border-radius: 40px;
+    border: 2px solid #caff6a;
+    position: relative;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tail (green speech arrow) */
+.testimonial-tail {
+    width: 0;
+    height: 0;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 23px solid #caff6a;
+    position: absolute;
+    bottom: -23px;
+    left: 50px;
+}
+
+/* Name + role */
+.testimonial-author {
+    margin-top: 25px;
+}
+
+.testimonial-author .name {
+    color: #caff6a;
+    font-weight: 600;
+}
+
+.testimonial-author .role {
+    font-size: 14px;
+}
+
+/* Arrows */
+.arrow {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.arrow:hover {
+    color: #caff6a;
+}
+
+/* Dots */
+.testimonial-dots {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.testimonial-dots span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.testimonial-dots .active {
+    background: #caff6a;
+}
+
+
+
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header same as testimonials */
+.contact-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-title {
+    background: #caff6a;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.contact-desc {
+    max-width: 550px;
+    font-size: 17px;
+    color: #444;
+}
+
+/* MAIN BOX */
+.contact-box {
+    background: #f3f3f3;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 60px 70px;
+    gap: 40px;
+}
+
+/* LEFT FORM AREA — EXACT WIDTH OF ORIGINAL */
+.contact-form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-options {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* INPUTS */
+.input-field {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 2px solid #c9c9c9;
+    font-size: 15px;
+    outline: none;
+}
+
+.textarea-field {
+    height: 120px;
+    resize: none;
+}
+
+/* RIGHT IMAGE AREA — EXACT POSITIVIUS SPACING */
+.contact-image {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contact-image img {
+    width: 85%;
+    max-width: 420px;
+    height: auto;
+}
+
+/* SEND BUTTON */
+.cta-button {
+    padding: 16px 40px;
+    background: #191a23;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background: #b9ff66;
+    color: black;
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+}
+
+
+
+
+/* FOOTER SECTION */
+.footer-section {
+    background: #191a23;
+    padding: 80px 70px;
+    border-radius: 40px 40px 0 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Wrapper */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* TOP ROW */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.footer-logo h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Nav Links */
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Social icons */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* MIDDLE ROW */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #25262C;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 40px;
+}
+
+/* Contact info */
+.footer-contact h3 {
+    color: #b9ff66;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* Subscribe box */
+.footer-subscribe {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-subscribe input {
+    padding: 14px 20px;
+    width: 280px;
+    border-radius: 8px;
+    border: 2px solid #c9c9c9;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-subscribe input::placeholder {
+    color: #dcdcdc;
+}
+
+/* BUTTON (same as SEND button) */
+.cta-button {
+    padding: 16px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background: #b9ff66;
+}
+
+.cta-button:hover {
+    background: #191a23;
+    color: #f2f2f2;
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+}
+
+/* BOTTOM ROW */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+
