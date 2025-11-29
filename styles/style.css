@@ -106,8 +106,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 300px;
-    padding-block: 80px 100px;
+    padding-inline: 320px;
+    padding-block: 120px 100px;
 
 }
 
@@ -198,7 +198,7 @@ header {
 .sponsors-container {
     width: 100%;
     max-width: 1280px;
-    padding-inline: 100px;
+    padding-inline: -10px;
 }
 
 .sponsors-grid {
@@ -901,6 +901,7 @@ header {
     align-items: center;
     padding: 60px 70px;
     gap: 40px;
+    position: relative;
 }
 
 /* LEFT FORM AREA — EXACT WIDTH OF ORIGINAL */
@@ -947,12 +948,16 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
+    position: relative;
+  
 }
 
 .contact-image img {
-    width: 85%;
-    max-width: 420px;
+    width: 150%;
+    /* max-width: 500px; */
     height: auto;
+      position: absolute;
+    right: -375px;
 }
 
 /* SEND BUTTON */
